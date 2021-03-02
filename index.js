@@ -12,8 +12,8 @@ let waterTimes = [28800000, 21600000];
 let sayings = ['czy wiedziałeś, że Ziemia jest jedyną planeta w układzie słonecznym której nazwa nie pochodzi od imienia boga', 'hej, pięknie dziś wyglądasz:3'];
 
 const urBeautiful = () => {
-    bot.channels.cache.get(waterChannel).send(sayings[Math.floor(Math.random() * 2)]);
     beautifulTimeout = setTimeout(() => {
+        bot.channels.cache.get(waterChannel).send(sayings[Math.floor(Math.random() * 2)]);
         urBeautiful();
     }, 39600000);
 }
