@@ -29,6 +29,9 @@ bot.login(TOKEN);
 
 bot.on('ready', () => {
     console.info(`Logged in as ${bot.user.tag}`)
+    bot.channels.cache.get(waterChannel).send('hej, od dziś będę twoim przypomnieniem o nawodnieniu organizmu i dzienna dawką ciakawostek. do zoba!');
+    urBeautiful();
+    waterReminder();
 })
 
 bot.on('message', msg => {
@@ -43,7 +46,6 @@ bot.on('message', msg => {
                 waterChannel = msg.channel.id;
                 waterReminder();
                 urBeautiful();
-                
             }
         }
     }
