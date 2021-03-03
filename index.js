@@ -5,7 +5,7 @@ const bot = new Discord.Client();
 const TOKEN = process.env.TOKEN;
 
 let beautifulTimeout = null;
-let waterChannel = '749663805155573873';
+let waterChannel = '680468339952189525';
 
 
 let lastCiekawostka = null
