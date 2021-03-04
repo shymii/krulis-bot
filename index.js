@@ -20,7 +20,7 @@ let ciekawostki =
 {content: '"alicja w krainie czarów" jest szóstym filmem, który przekroczył 1 miliard dolarów dochodu.', photo: null, pName: null},
 {content: 'dwa minusy dają plus', photo: null, pName: null},
 {content: 'Δ=b²-4ac', photo: null, pName: null},
-{content: 'gdy ci smutno, gdy ci źle, chodź do rio, przytul się', photo: './imgaes/rio.jpg', pName: 'rio.jpg'},
+{content: 'gdy ci smutno, gdy ci źle, chodź do rio, przytul się', photo: './images/rio.jpg', pName: 'rio.jpg'},
 {content: 'gapisz się jej na bebech?', photo: './images/edzia_bebech.jpg', pName: 'edzia_bebech.jpg'},
 {content: 'bóbr jest największym gryzoniem zamieszkującym europę', photo: './images/bobr.jpg', pName: 'bobr.jpg'},
 {content: null, photo: './images/mieciu.jpg', pName: 'mieciu.jpg'},
@@ -84,7 +84,7 @@ bot.login(TOKEN);
 
 bot.on('ready', () => {
     console.info(`Logged in as ${bot.user.tag}`)
-    bot.channels.cache.get(waterChannel).send('hej, jestem kruliś. robie wiele fajnych rzeczy jak np. przypominam o nawodnieniu organizmu albo daje dzienną dawkę ciekawostek. do zoba!');
+    //bot.channels.cache.get(waterChannel).send('hej, jestem kruliś. robie wiele fajnych rzeczy jak np. przypominam o nawodnieniu organizmu albo daje dzienną dawkę ciekawostek. do zoba!');
     urBeautiful();
 })
 
