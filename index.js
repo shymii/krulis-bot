@@ -5,8 +5,9 @@ const bot = new Discord.Client();
 const TOKEN = process.env.TOKEN;
 
 let beautifulTimeout = null;
-//let waterChannel = '680468339952189525';
-let waterChannel = '811917843771817994';
+let waterChannel = '680468339952189525';
+//test channel
+//let waterChannel = '811917843771817994';
 
 let lastCiekawostka = null
 let ciekawostki = [
@@ -65,6 +66,7 @@ let ciekawostki = [
 {content: 'siema, masz może jakąś gałąź? ;pp', photo: './images/filip_galaz.jpg', pName: 'filip_galaz.jpg'},
 {content: 'buziol', photo: './images/filip_buziol.jpg', pName: 'filip_buziol.jpg'},
 {content: 'pobudka', photo: './images/filip_pobudka.jpg', pName: 'filip_pobudka.jpg'},
+{content: 'elmo pjes', photo: './images/elmo_pjes.png', pName: 'elmo_pjes.png'},
 ];
 
 const losujCiekawostke = function(){
