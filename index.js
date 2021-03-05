@@ -8,7 +8,6 @@ let beautifulTimeout = null;
 let waterChannel = '680468339952189525';
 // test channel let waterChannel = '811917843771817994';
 
-
 let lastCiekawostka = null
 let ciekawostki = [
 {content: 'czy wiedziałeś, że Ziemia jest jedyną planeta w układzie słonecznym której nazwa nie pochodzi od imienia boga', photo: null, pName: null}, 
@@ -62,7 +61,10 @@ let ciekawostki = [
 {content: '', photo: './images/whol8.jpg', pName: 'whol8.jpg'},
 {content: 'szopy i wydry to epickie stworzenia', photo: './images/szop_wydra.jpg', pName: 'szop_wydra.jpg'},
 {content: 'weźże przykład z otta i poucz się trochę', photo: './images/otto_uczonko.jpg', pName: 'otto_uczonko.jpg'},
-{content: '', photo: './images/mieciu_herbata.jpg', pName: 'mieciu_herbata.jpg'}
+{content: '', photo: './images/mieciu_herbata.jpg', pName: 'mieciu_herbata.jpg'},
+{content: 'siema, masz może jakąś gałąź? ;pp', photo: './images/filip_galaz.jpg', pName: 'filip_galaz.jpg'},
+{content: 'buziol', photo: './images/filip_buziol.jpg', pName: 'filip_buziol.jpg'},
+{content: 'pobudka', photo: './images/filip_pobudka.jpg', pName: 'filip_pobudka.jpg'},
 ];
 
 const losujCiekawostke = function(){
@@ -73,7 +75,6 @@ const losujCiekawostke = function(){
         return ciekawostkaLos;
     }
 }
-
 
 const urBeautiful = () => {
     beautifulTimeout = setTimeout(() => {
@@ -90,14 +91,31 @@ const urBeautiful = () => {
     }, Math.floor(Math.random() * 25200000) + 36000000);
 }
 
-   
+let lastBanan = null;
+let banany = [
+    {content: 'nom opierdolilem se banana i co się wkurzasz??', photo: './images/filip_banan.jpg', pName: 'filip_banan.jpg'},
+    {content: 'DAWAJ KURWA BANANA', photo: './images/filip_krzyk.jpg', pName: 'filip_krzyk.jpg'},
+    {content: 'ale bym se opierdolil banana', photo: './images/filip_ale_by_se_dal_banan.jpg', pName: 'filip_ale_by_se_dal_banan.jpg'},
+    {content: 'gdzie ten banan?????????', photo: './images/filip_gdzie_banan.mp4', pName: 'filip_gdzie_banan.mp4'},
+    {content: 'hi, im looking for banana, do u hav som?', photo: './images/filip_szuka_banan.jpg', pName: 'filip_szuka_banan.jpg'},
+    {content: 'czy ktoś powiedział b a n a n??', photo: './images/filip_czy_ktos_banan.jpg', pName: 'filip_czy_ktos_banan.jpg'},
+    {content: 'na zakupy typu bananowe', photo: './images/filip_zakupy.jpg', pName: 'filip_zakupy.jpg'},
+    {content: 'we mi zamów jakiegoś banana ten', photo: './images/filip_we_zamow.jpg', pName: 'filip_we_zamow.jpg'},
+]
 
+const losujBanan = function(){
+    let bananLos = banany[Math.floor(Math.random() * banany.length)];
+    if(bananLos == lastBanan){
+        losujBanan();
+    } else {
+        return bananLos;
+    }
+}
 
 bot.login(TOKEN);
 
 bot.on('ready', () => {
     console.info(`Logged in as ${bot.user.tag}`)
-    //bot.channels.cache.get(waterChannel).send('hej, jestem kruliś. robie wiele fajnych rzeczy jak np. przypominam o nawodnieniu organizmu albo daje dzienną dawkę ciekawostek. do zoba!');
     urBeautiful();
 })
 
@@ -111,6 +129,15 @@ bot.on('message', msg => {
                 }
                 waterChannel = msg.channel.id;
                 urBeautiful();
+            }
+            if(msgContent == 'banan'){
+                let resp = losujBanan();
+                let embed = new Discord.MessageEmbed()
+                .setTitle(resp.content)
+                .setColor('#DD9ECD')
+                .attachFiles([resp.photo])
+                .setImage(`attachment://${resp.pName}`)
+                msg.channel.send(embed)
             }
         }
     }
