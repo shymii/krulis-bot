@@ -5,8 +5,8 @@ const bot = new Discord.Client();
 const TOKEN = process.env.TOKEN;
 
 let beautifulTimeout = null;
-let waterChannel = '680468339952189525';
-// test channel let waterChannel = '811917843771817994';
+//let waterChannel = '680468339952189525';
+let waterChannel = '811917843771817994';
 
 let lastCiekawostka = null
 let ciekawostki = [
@@ -96,7 +96,7 @@ let banany = [
     {content: 'nom opierdolilem se banana i co się wkurzasz??', photo: './images/filip_banan.jpg', pName: 'filip_banan.jpg'},
     {content: 'DAWAJ KURWA BANANA', photo: './images/filip_krzyk.jpg', pName: 'filip_krzyk.jpg'},
     {content: 'ale bym se opierdolil banana', photo: './images/filip_ale_by_se_dal_banan.jpg', pName: 'filip_ale_by_se_dal_banan.jpg'},
-    {content: 'gdzie ten banan?????????', photo: './images/filip_gdzie_banan.mp4', pName: 'filip_gdzie_banan.mp4'},
+    {content: 'gdzie ten banan?????????', photo: './images/filip_gdzie_banan.jpg', pName: 'filip_gdzie_banan.jpg'},
     {content: 'hi, im looking for banana, do u hav som?', photo: './images/filip_szuka_banan.jpg', pName: 'filip_szuka_banan.jpg'},
     {content: 'czy ktoś powiedział b a n a n??', photo: './images/filip_czy_ktos_banan.jpg', pName: 'filip_czy_ktos_banan.jpg'},
     {content: 'na zakupy typu bananowe', photo: './images/filip_zakupy.jpg', pName: 'filip_zakupy.jpg'},
@@ -141,7 +141,7 @@ bot.on('message', msg => {
             }
             if(msgContent == 'frens'){
                 let embed = new Discord.MessageEmbed()
-                .setTitle('Frens to suchy pokarm do rozsądnego karmienia piesków. Jest hipoalergiczny, bezglutenowy i bezzbożowy, to znaczy, że idealny także dla czworonogów z wrażliwym żołądkiem. Karma Frens skomponowana została w oparciu o białko pochodzące z larw owadów. To sprawia, że proces produkcyjny jest bardziej etyczny i ekologiczny niż w przypadku karm mięsnych - oszczędza zwierzęta hodowlane i znaczące ilości wody. Karma produkowana i pakowana jest u naszych niemieckich sąsiadów według rygorystycznych standardów, z wyłącznie naturalnych i atestowanych składników.')
+                .setDescription('Frens to suchy pokarm do rozsądnego karmienia piesków. Jest hipoalergiczny, bezglutenowy i bezzbożowy, to znaczy, że idealny także dla czworonogów z wrażliwym żołądkiem. Karma Frens skomponowana została w oparciu o białko pochodzące z larw owadów. To sprawia, że proces produkcyjny jest bardziej etyczny i ekologiczny niż w przypadku karm mięsnych - oszczędza zwierzęta hodowlane i znaczące ilości wody. Karma produkowana i pakowana jest u naszych niemieckich sąsiadów według rygorystycznych standardów, z wyłącznie naturalnych i atestowanych składników.')
                 .setColor('#DD9ECD')
                 msg.channel.send(embed)
             }
