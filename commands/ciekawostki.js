@@ -21,7 +21,7 @@ let ciekawostki = [
     {content: '', photo: './images/jajuwa.jpg', pName: 'jajuwa.jpg'},
     {content: 'hi u lil sweetie, smile more!' , photo: './images/lisek.jpg', pName: 'lisek.jpg'},
     {content: 'bóbr potrafi wstrzymać oddech nawet na kwadrans, co czyni go wyśmienitym nurkiem.', photo: null, pName: null},
-    {content: 'dzięki wibrysom (włosom czuciowym) na pysku, boberki świetnie sobie radzą także w zanieczyszczonej, mętnej wodzie. :sweat_drops', photo: null, pName: null},
+    {content: 'dzięki wibrysom (włosom czuciowym) na pysku, boberki świetnie sobie radzą także w zanieczyszczonej, mętnej wodzie. :sweat_drops:', photo: null, pName: null},
     {content: 'bóbr jest raczej małomówny – komunikaty głosowe wydaje bardzo rzadko. przed niebezpieczeństwem ostrzega innych członków stada poprzez głośne uderzanie ogonem o wodę.', photo: './images/boberki_woda.jpg', pName: 'boberki_woda.jpg'},
     {content: 'rzuciłbys coś ten :point_right: :point_left:', photo: './images/rio_rzucaj.jpg', pName: 'rio_rzucaj.jpg'},
     {content: '', photo: './images/bunny_pie.jpg', pName: 'bunny_pie.jpg'},
