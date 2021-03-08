@@ -31,6 +31,7 @@ client.login(TOKEN);
 client.on('ready', () => {
     console.info(`Logged in as ${client.user.tag}`)
     client.user.setActivity('!help')
+    startCiekawostki();
 })
 
 client.on('message', msg => {
