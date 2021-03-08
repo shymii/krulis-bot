@@ -19,14 +19,18 @@ let ciekawostkiChannel = '680468339952189525';
 //let ciekawostkiChannel = '811917843771817994';
 let ciekawostkaTimeout = null
 
+const startCiekawostki = function(){
+    client.channels.cache.get(ciekawostkiChannel).send(client.commands.get('ciekawostki').execute());
+    ciekawostkaTimeout = setTimeout(() => {
+        startCiekawostki()
+    }, Math.floor(Math.random() * 25200000) + 36000000)
+}
+
 client.login(TOKEN);
 
 client.on('ready', () => {
     console.info(`Logged in as ${client.user.tag}`)
     client.user.setActivity('!help')
-    ciekawostkaTimeout = setInterval(() => {
-        client.channels.cache.get(ciekawostkiChannel).send(client.commands.get('ciekawostki').execute());
-    }, Math.floor(Math.random() * 25200000) + 36000000);
 })
 
 client.on('message', msg => {
