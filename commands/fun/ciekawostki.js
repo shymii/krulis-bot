@@ -58,6 +58,8 @@ let ciekawostki = [
     {content: 'buziol', photo: './images/filip_buziol.jpg', pName: 'filip_buziol.jpg'},
     {content: 'pobudka', photo: './images/filip_pobudka.jpg', pName: 'filip_pobudka.jpg'},
     {content: 'elmo pjes', photo: './images/elmo_pjes.png', pName: 'elmo_pjes.png'},
+    {content: 'drzemka', photo: './images/edzia_drzemka.png', pName: 'edzia_drzemka.png'},
+    {content: 'hi me is rio, me clean', photo: './images/rio_clean.jpg', pName: 'rio_clean.jpg'},
 ];
 
 const losujCiekawostke = function(){

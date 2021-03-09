@@ -9,7 +9,14 @@ let banany = [
     {content: 'hi, im looking for banana, do u hav som?', photo: './images/filip_szuka_banan.jpg', pName: 'filip_szuka_banan.jpg'},
     {content: 'czy ktoś powiedział b a n a n??', photo: './images/filip_czy_ktos_banan.jpg', pName: 'filip_czy_ktos_banan.jpg'},
     {content: 'na zakupy typu bananowe', photo: './images/filip_zakupy.jpg', pName: 'filip_zakupy.jpg'},
-    {content: 'we mi zamów jakiegoś banana ten', photo: './images/filip_we_zamow.jpg', pName: 'filip_we_zamow.jpg'}
+    {content: 'we mi zamów jakiegoś banana ten', photo: './images/filip_we_zamow.jpg', pName: 'filip_we_zamow.jpg'},
+    {content: 'ja po wpierdoleniu kosza bananuw', photo: './images/filip-kosz-bananow.jpg', pName: 'filip-kosz-bananow.jpg'},
+    {content: 'gdzieś tam za choryzontem czekają na mnie banany', photo: './images/filip_horyzont.jpg', pName: 'filip_horyzont.jpg'},
+    {content: 'za kisc banankuw stanę na dwóch łapkach:3', photo: './images/filip_lapki.jpg', pName: 'filip_lapki.jpg'},
+    {content: 'słuchaj, ty mnie tu nie uspokajaj, tylko po banany zapierdalaj!!!', photo: './images/filip_zapierdalaj.jpg', pName: 'filip_zapierdalaj.jpg'},
+    {content: 'kiedy niksa odkryła, żem opierdolil banana', photo: './images/filip_niksa_odkryla.jpg', pName: 'filip_niksa_odkryla.jpg'},
+    {content: 'kiedy straszą mnie lekami po opierdoleniu soczystego bananka :flushed:', photo: './images/filip_strasza.jpg', pName: 'filip_strasza.jpg'},
+    {content: 'CZY MI SIĘ DOBRZE O USZY OBIŁO???? KTO CO MÓWIŁ O BANANACH', photo: './images/filip_kto_banany.jpg', pName: 'filip_kto_banany.jpg'}
 ];
 
 const losujBanan = function(){
