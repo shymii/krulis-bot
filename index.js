@@ -23,7 +23,7 @@ const startCiekawostki = function(){
     client.channels.cache.get(ciekawostkiChannel).send(client.commands.get('ciekawostki').execute());
     ciekawostkaTimeout = setTimeout(() => {
         startCiekawostki()
-    }, Math.floor(Math.random() * (36000000 - 25200000) + 25200000)
+    }, Math.floor(Math.random() * (36000000 - 25200000)) + 25200000)
 }
 
 client.login(TOKEN);
